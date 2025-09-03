@@ -1,0 +1,154 @@
+body {
+  background-color: #dedcec;
+  font-family: "Montserrat Alternates", sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.background-slider {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  animation: slider 13s infinite;
+  transition: background-image 1s ease-in-out;
+  filter: brightness(1);
+}
+
+/* CONTENEDOR PRINCIPAL */
+.contenido {
+  max-width: 500px;
+  margin: 30px auto;
+  padding: 30px 20px;
+  background-color: rgba(255, 255, 255, 0.15);
+  border-radius: 15px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(12px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* BOTÓN VOLVER */
+.Volver {
+  align-self: flex-start;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.Volver a {
+  font-weight: bold;
+  color: black;
+  text-decoration: none;
+}
+
+
+a:hover {
+  color: #3c3c7c;
+
+}
+
+/* LOGO */
+.hola {
+  max-width: 80%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+form {
+  text-align: center;
+  width: 100%;
+  transition: all 0.3s ease;
+}
+
+label {
+  color: rgb(51, 51, 153);
+  display: block;
+  text-align: left;
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+/* CAMPOS */
+.campos {
+  width: 100%;
+  height: 38px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  padding-left: 10px;
+  box-sizing: border-box;
+}
+
+select {
+  width: 100%;
+  height: 38px;
+  border-radius: 8px;
+  padding-left: 10px;
+  border: 1px solid #ccc;
+}
+
+.Registrarme {
+  width: 100%;
+  height: 45px;
+  border-radius: 9px;
+  background-color: #a6bce2;
+  color: white;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.Registrarme:hover {
+  background-color: rgb(13, 13, 133);
+  transition: all 0.3s ease;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* ENLACE */
+.enlace {
+  background-color: rgb(8, 111, 222);
+  border-radius: 7px;
+  width: 100%;
+  max-width: 280px;
+  height: auto;
+  margin-top: 20px;
+  padding: 10px;
+  text-align: center;
+}
+
+.enlace a {
+  color: white;
+  font-weight: 600;
+  display: block;
+  text-decoration: none;
+}
+
+.enlace:hover {
+  background-color: blue;
+}
+
+/* ! RESPONSIVE ADAPTACIÓN */
+@media screen and (max-width: 480px) {
+  .contenido {
+    padding: 20px 15px;
+  }
+
+  .hola {
+    max-width: 100%;
+  }
+
+  .Registrarme, .campos, select {
+    font-size: 16px;
+  }
+
+  label {
+    font-size: 14px;
+  }
+
+  .enlace {
+    font-size: 14px;
+  }
+}
